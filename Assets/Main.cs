@@ -10,7 +10,7 @@ public class Main : MonoBehaviour
     void Start()
     {
         // myCobotとの接続
-        MyCobot mc = new MyCobot("/dev/cu.SLAB_USBtoUART"); // 自身のUSBポートを指定
+        MyCobot mc = new MyCobot("COM3"); // 自身のUSBポートを指定
         mc.Open();
         Thread.Sleep(5000);
 

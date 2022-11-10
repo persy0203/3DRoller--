@@ -15,7 +15,7 @@ public class Syncjoin : MonoBehaviour
 
     void Start()
     {
-        mc = new MyCobot(COM3);
+        MyCobot mc = new MyCobot("COM3");
         mc.Open();
     }
 
