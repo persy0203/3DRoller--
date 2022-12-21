@@ -6,7 +6,7 @@ using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Policies;
 
 // RollerAgent
-public class RollerAgent : Agent
+public class MycobotAgent : Agent
 {
     public Transform target; // TargetのTransform
     Rigidbody rBody; // RollerAgentのRigidBody
@@ -32,7 +32,7 @@ public class RollerAgent : Agent
 
         // Targetの位置のリセット
         target.localPosition = new Vector3(
-            Random.value * 8 - 4, 0.5f, Random.value * 8 - 4);
+            Random.value * 5 - 3, 0.5f, Random.value * 5 - 3);
     }
 
     // 状態取得時に呼ばれる
